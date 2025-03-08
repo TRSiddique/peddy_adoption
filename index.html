@@ -10,27 +10,30 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="w-11/12 mx-auto justify-between flex  my-10">
+    <nav class="w-11/12 mx-auto justify-between flex my-10 ">
         <div class="flex justify-between w-[120px]">
             <img src="assets/logo.webp" alt="">
             <h1 class="font-bold text-xl">Peddy</h1>
         </div>
-        <div class="w-[300px] flex justify-between">
+        <div class="hidden lg:flex lg:w-[300px] lg:justify-between">
             <button >Home</button>
             <button>Shop</button>
             <button>Contact</button>
         </div>
-        <img class="border rounded-full w-10 h-10" src="assets/person.png" alt="">
+        <img class="hidden lg:border rounded-full lg:w-10 h-10" src="assets/person.png" alt="">
+        <button id="menu-btn" class="md:hidden text-2xl">
+            &#9776; <!-- Hamburger Menu Icon -->
+        </button>
 
 
     </nav>
     <!-- section-01 -->
-<section class="flex flex-col items-center w-1/2 mx-auto">
+<section class="flex flex-col items-center lg:w-1/2 mx-auto">
     <div class="flex ">
         <h3 class="font-bold text-xl">Bringing Families Together</h3>
         <img class="w-7 h-7 " src="assets/fire.png" alt="">
     </div>
-    <h1 class="font-bold text-7xl py-5 text-center">Your Path to Adoption Starts here</h1>
+    <h1 class="font-bold text-4xl lg:text-7xl py-5 text-center">Your Path to Adoption Starts here</h1>
     <p class="text-center pb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
     <button class="btn btn-info" ><a href="#targetSection">View More</a></button>
     <img src="assets/pet.webp" alt="">
@@ -48,13 +51,13 @@
     <button class="btn btn-active btn-success" onclick="sortAscending()">Sort by price</button>
 </section>
 
-<section class="flex justify-between">
+<section class="flex flex-col lg:flex-row  items-center justify-between">
 
-    <div class="w-8/12 px-5 mx-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10" id="card">
+    <div class="lg:w-8/12 px-5 mx-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10" id="card">
 
     </div>
    
-    <div class="w-4/12 mx-2 h-100 py-10 grid grid-cols-2 gap-4 justify-items-start" id="sidebar">
+    <div class="lg:w-4/12 mx-2 h-100 py-10 grid grid-cols-2 gap-4 justify-items-start" id="sidebar">
        
        
 
