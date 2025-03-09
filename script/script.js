@@ -11,7 +11,7 @@ const displayCategory=(categories)=>{
 const categoryContainer=document.getElementById("categoryContainer")
 
     categories.forEach((item)=>{
-        console.log(item.category);
+       // console.log(item.category);
 
 //create button
 const buttonContainer=document.createElement('div');
@@ -81,7 +81,7 @@ else{
     petContainer.classList.add("grid");
 }
     pets.forEach((pet)=>{
-      //  console.log(pet)
+       // console.log(pet)
     const cardContainer=document.createElement('div');
     cardContainer.innerHTML=
 
@@ -104,6 +104,12 @@ else{
 
       <button class="btn btn-lg">Adopt</button>
       <button class="btn btn-lg">Details</button>
+    
+
+
+
+      
+
     </div>
   </div>
   </div>
@@ -112,6 +118,7 @@ else{
 
     `
 petContainer.append(cardContainer)
+//console.log(pet)
 
 
     }
@@ -122,7 +129,7 @@ petContainer.append(cardContainer)
 
 function addToSidebar(imageUrl){
 
-    console.log(imageUrl)
+    //console.log(imageUrl)
     const sidebar = document.getElementById("sidebar");
 
             // Create a new image element
@@ -143,10 +150,6 @@ function addToSidebar(imageUrl){
             const sortedPets = [...originalPets].sort((a, b) => a.price - b.price); // Sort a copy
             displayCard(sortedPets); // Display sorted cards
         }
-
-
-
-
 
 
 
