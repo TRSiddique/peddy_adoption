@@ -45,7 +45,7 @@ Peddy is a modern **Pet Adoption Platform** designed to connect adorable pets wi
 2️⃣ Browse through the adorable pets.  
 3️⃣ Click **"Details"** to view full pet information.  
 4️⃣ Click **"Adopt"** to proceed with adoption.  
-5️⃣ Click **❤️ (Like)** to save a pet in your favorites list.  
+5️⃣ Click **👍 (Like)** to save a pet in your favorites list.  
 
 ---
 
@@ -64,4 +64,3 @@ Peddy is a modern **Pet Adoption Platform** designed to connect adorable pets wi
 
 ---
 
-Let me know if you need any modifications! 🚀🔥
