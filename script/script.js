@@ -102,7 +102,7 @@ else{
     <img src="assets/like.png" class="w-8 h-8"/>
 </button>
 
-      <button class="btn btn-lg">Adopt</button>
+      <button onclick="openModal()"  class="btn btn-lg">Adopt</button>
       <button onclick="loadDetails(${pet.petId})" class="btn btn-lg">Details</button>
     
 
@@ -203,7 +203,27 @@ detailContainer.innerHTML=
 }
 //modal end
 
+//countdown modal
+function openModal() {
+    document.getElementById('countdownModal').classList.remove('hidden');
 
+    let count = 3;
+    const countdownElement = document.getElementById('countdown');
+    
+    const timer = setInterval(() => {
+        countdownElement.textContent = count;
+        count--;
+
+        if (count < 0) {
+            clearInterval(timer);
+            closeModal(); // Close the modal when countdown finishes
+        }
+    }, 500);
+}
+
+function closeModal() {
+    document.getElementById('countdownModal').classList.add('hidden');
+}
 
 
 
