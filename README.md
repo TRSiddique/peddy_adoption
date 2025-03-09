@@ -35,10 +35,7 @@ Peddy is a modern **Pet Adoption Platform** designed to connect adorable pets wi
 
 ---
 
-## 📸 **Preview**  
-*(You can add screenshots here to showcase the UI!)*  
 
----
 
 ### 💡 **How to Use?**  
 1️⃣ Open the website.  
