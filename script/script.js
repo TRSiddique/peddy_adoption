@@ -103,7 +103,7 @@ else{
 </button>
 
       <button class="btn btn-lg">Adopt</button>
-      <button class="btn btn-lg">Details</button>
+      <button onclick="loadDetails(${pet.petId})" class="btn btn-lg">Details</button>
     
 
 
@@ -151,9 +151,57 @@ function addToSidebar(imageUrl){
             displayCard(sortedPets); // Display sorted cards
         }
 
+//modal dekhanor jonno
+
+const loadDetails=async (petId)=>{
+    
+    const uri=`https://openapi.programming-hero.com/api/peddy/pet/${petId}`;
+
+    const res= await fetch(uri);
+    const data=await res.json();
+
+    displayDetails(data.petData);
+
+}
+const displayDetails=(pet)=>{
+    console.log(pet);
+
+    const detailContainer = document.getElementById("modalContent");
+detailContainer.innerHTML=
+`
+<img src=${pet.image} />
+<h2  class="font-bold text-xl py-2">${pet.pet_name}</h2>
+<div class="flex ">
+<div>
+<p>Breed: ${pet.breed}</p>
+<p>Gender: ${pet.gender}</p>
+<p>Vaccinated status: ${pet.vaccinated_status}</p>
+</div>
+
+<div>
+<p>Birth: ${pet.breed}</p>
+<p>Price: ${pet.price}</p>
+</div>
+</div>
+
+<h2 class="font-bold text-xl py-2">Details Information</h2>
+<p class=" text-justify">${pet.pet_details}</p>
+
+`
 
 
 
+  //way-01
+
+    // document.getElementById("showModalData").click();
+
+    //way-02
+   document.getElementById("mymodal").showModal();
+
+    
+
+}
+//modal end
 
 
 
